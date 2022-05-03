@@ -1,0 +1,68 @@
+#Iniciando bem no Git e Github
+Para criar pastas de repositório: use o comando mkdir git-nome da pasta do repositório;
+Para acessar as pastas de repositório: use o comando cd git-nome da pasta do repositório;
+Para inicializar um repositório e monitorar suas alterações: use o comando git init;
+Para voltar ao diretório anterior: use o comando cd ..;
+Comando vim ou vi por padrão para MAC e LINUX e para o windows é DIR, se preferir utilize seu editor de texto favorito;
+Comando i: serve para inserir informações no arquivo do projeto;
+Comando : : significa que vai iniciar algum comando;
+Comando w: significa escrever ou salvar no arquivo;
+comando q: significa sair do documento;
+Comando git status: serve para reportar o estado no repositório no momento atual;
+Comando git add: adiciona o arquivo para ser commitado;
+comando git commit -m: adiciona um commit em forma de mensagem no arquivo do projeto.
+comando git commit -am: adiciona um commit com todos arquivos do projeto e a mensagem.
+
+Ciclo de vida do status do arquivo:
+Untracked: Ainda não foi visto pelo Git;
+
+Unmodified: Ainda não teve nenhuma modificação;
+
+Modified: O arquivo já foi editado, mas ainda não foi salvo para por em imagem (Versão);
+
+Staged: Estou pronto para ser commitado, estou pronto para ser salvo;
+
+O que é Commit?
+É a forma de comunicar para o Git pegar os arquivos e criar uma imagem dele (Uma Versão);
+
+O que é GIT?
+Sistema que gerencia versões diferentes de um documento.
+
+Diferenças do Git para os outros sistemas:
+1- Responsável por versionar os arquivos do projeto.
+2- Os outros sistemas trabalham com as diferenças dos arquivos, enquanto o GIT trabalha com os estados dos arquivos.
+
+O que é Github?
+Serviço de web compartilhado para projetos que utilizam o Git para versionamento.
+
+Git log: Comando que mostra a hash dos commit, quem foi o autor dele, a data e uma mensagem para o commit é muito importante.
+
+Comando git log --decorate: mostra mais informações como: ir de uma branch para outra ou se houve um merge, que tags foram geradas.
+Comando git log --author: filtra as informações pelo nome do autor e mostra na tela.
+Comando git log --graph: ele mostra em forma de gráfico o que acontece nas branches e nas versões.
+Comando git shortlog: filtra as informações e mostra o nome do author, quantos commits realizou e quais foram eles.
+Comando git shortlog -sn: mostra a quantidade de commits e a quantidade de pessoas que realizaram os commits.
+
+Todo commit possui uma hash e com ela conseguimos identificar o que que foi feito nesse commit é muito importante que ao usar os comandos de reset sempre pegar as hashs do commit anterior para ser resetado as alterações do commit atual para seu estado anterior.
+
+Comando git show: ao adicionar uma hash do commit na linha desse comando podemos ver essas informações que estão dentro da hash selecionada.
+Comando git diff: mostra as as mudanças no projeto antes de commitar, é muito importante!
+
+Comando git checkout na mesma linha o nome do arquivo: serve para resetar o arquivo ao estado anterior.
+Comando git reset HEAD na mesma linha nome do arquivo: serve para pegar o arquivo e tirar-lo da fila do staged
+Comando git reset --soft na mesma linha a hash do commit: serve para pegar a modificação por um commit e mata-lo e já deixar o arquivo em staged pronto para ser comitado.  
+Comando git reset --mixed na mesma linha a hash do commit: serve para matar o commit, porém retorna os arquivos para antes de staged, nesse caso modified.
+Comando git reset --hard na mesma linha a hash do commit: ele ignora a existência do commit e vai matar tudo que foi feito dele.
+
+
+Comando git push origin nome de sua branch: para enviar seus commits com suas alterações para o repositório remoto.
+testando 
+testando novamente o git push!
+ok!
+
+
+
+
+
+
+

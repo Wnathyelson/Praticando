@@ -60,6 +60,20 @@ testando
 testando novamente o git push!
 ok!
 
+O arquivo .gitignore serve para restringir o acesso de arquivos pelo padrão configurado dentro dele por exemplo: o proprio arquivo ou o tipo de extensão do arquivo.
+Git stash: ele é responsável por guardar modificações que ainda não foram comitadas em um arquivo para ser aplicada depois.
+comando git stash apply: aplica as mudanças guardadas no arquivo (WIP).
+comando git stash list: mostra a lista de todos os stashs que foram criados.
+comando git stash clear: limpa tudo que estiver no stash.
+Criação de Alias (atalhos): git config --global alias.s status.
+Quando trabalha-se com bibliotecas ou sistemas muito grandes é bom utilizar versionamento com tags:
+Comando para criar tags: git tag -a 1.0.0 -m "teste finalizado"
+Comando para subir as tags para o repositório remoto: git push origin master --tags
+Comando para visualizar todas as tags geradas: git tag.
+Comando git revert hash do commit: serve para reverter um commit para um estado anterior ao que tenha ocasionado problema, sem perder o histórico de modificações.
+
+para deletar um branch ou uma tag do repositório remoto: git branch -d, ou git tag -d e depois
+ digitar o comando git push origin: <tag a ser apagada> ou <branch a ser apagado>
 
 
 
